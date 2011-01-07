@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Paint - Example 2</title>
+		<link type="text/css" href="css/basic.css" rel="stylesheet" />
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.4.custom.css" rel="stylesheet" />
+		<link  href="//fonts.googleapis.com/css?family=Reenie+Beanie:regular&subset=latin" rel="stylesheet" type="text/css" >  
+		<style type="text/css">
+	  	body{ background: url('assets/bg.png') #f0eadc;  }
+			article{ background: url('assets/bkg.pol-top.jpg') repeat-x 0 0 scroll transparent; display:block; width:100%; height:100%;}
+			article section{ display:block; position:relative; margin:0 auto; width:600px;}
+			article section.camera{background: url('assets/bkg.camera.png') no-repeat top center transparent; display:block; height:40px; z-index: 9999;}
+			article section.canvas{background: url('images/pol.png'); height:659px; margin-top:-30px; padding-left:57px; padding-top:83px; position:relative; top:-900px; width:532px; z-index:10;}
+			article section.canvas h3{font-family: 'Reenie Beanie', serif;}
+			article section.sliders { -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; position:relative; top:-650px; left:400px; background-color:#FBFCD7; color:#66432E; border:solid 1px #F0B569; padding:15px 0 15px 30px; width:250px; }
+			article section.sliders label {}
+			.slider{width:200px;}
+    </style>
+  </head>
+  <body>
+    <article>
+		<section class="camera"></section>
+		<section class="canvas">
+			<canvas id="imageView" width="476" height="493">
+			<p>Unfortunately, your browser is currently unsupported by our web 
+			application.  We are sorry for the inconvenience. Please use one of the 
+			supported browsers listed below, or draw the image you want using an 
+			offline tool.</p>
+			<p>Supported browsers: <a href="http://www.opera.com">Opera</a>, <a 
+			href="http://www.mozilla.com">Firefox</a>, <a 
+			href="http://www.apple.com/safari">Safari</a>, and <a 
+			href="http://www.konqueror.org">Konqueror</a>.</p>
+			</canvas>
+			<h3>Polaroid App Test!</h3>
+		</section>
+		<section class="sliders">
+			<label>Red:</label>
+			<div class="slider red"></div>
+			<label>Green:</label>
+			<div class="slider green"></div>
+			<label>Blue:</label>
+			<div class="slider blue"></div>
+			<label>Noise:</label>
+			<div class="slider noise"></div>			
+		</section>
+	</article>	
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui-1.8.4.custom.min.js"></script>
+	<script src="js/pl.js"></script>
+	<script src="js/pl.insta.js"></script>
+	<script src="js/pl.color.js"></script>
+</html>
+
